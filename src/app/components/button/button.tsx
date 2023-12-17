@@ -1,10 +1,11 @@
 import Link from "next/link"
-export function Button(props: { buttonText: string, class: string }) {
+export function Button(props: { buttonText: string, class: string, click?: () => void }) {
     return (
         <button
-                type="submit"
+                type="button"
+                onClick={props.click}
                 className= {props.class}
-              >
+              > 
                 {props.buttonText}
               </button>
     )
