@@ -11,7 +11,6 @@ export default function Login() {
     password: ''
   });
 
-
      
     return (
         <div className="flex items-center justify-center min-h-screen">
@@ -41,7 +40,7 @@ export default function Login() {
                     onChange={(e) => setLogin({...login, password: e.target.value})}
                   />
               </div>
-              <Button   buttonText="Entrar" class='w-full py-2 bg-green-500 text-white rounded-md hover:bg-green-600 focus:outline-none focus:shadow-outline-blue' />
+              <Button buttonText="Entrar" class='w-full py-2 bg-green-500 text-white rounded-md hover:bg-green-600 focus:outline-none focus:shadow-outline-blue' />
               <LinkButton href='/registro' buttonText="Registrar" class='w-full py-2 mt-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue' />
             </form>
           </div>
